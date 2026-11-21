@@ -1,0 +1,13 @@
+# Stem separation.
+#
+# Demucs (recommended, works on Apple Silicon): needs Python 3.10+. On an M1/M2/M3 Mac plain
+# `pip install demucs` pulls a PyTorch build with MPS (Apple GPU) support, and Demucs 4.1 uses it
+# automatically. On NVIDIA, install the CUDA torch build first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+demucs>=4.0.1
+#
+# Optional extras:
+# audio-separator adds BS-RoFormer / MDX / the RoFormer→Demucs ensemble.
+# audio-separator>=0.30
+# Rubber Band for the backend's "Render warped copy" (also needs the CLI: brew install rubberband).
+# pyrubberband>=0.4

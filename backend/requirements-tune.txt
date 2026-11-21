@@ -1,0 +1,8 @@
+# CPU pitch correction engines (no GPU needed). pYIN detection + segment pitch-shift work with the
+# core install alone; these add the good resynthesis methods.
+#   macOS: pyworld builds from source, so run `xcode-select --install` once first.
+pyworld>=0.3.4          # WORLD vocoder: formant-preserving, best for solo vocals
+praat-parselmouth>=0.4  # Praat PSOLA: most transparent for small corrections
+# Optional neural pitch detectors (need PyTorch, which requirements-ml.txt installs):
+# torchcrepe>=0.0.22
+# pesto-pitch>=1.0

@@ -1,0 +1,12 @@
+# Core backend: always installed
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+librosa>=0.10
+pyloudnorm>=0.1.1
+# FFmpeg for MP3/Opus/WMA/ALAC/AIFF-C… and audio from video. A system `ffmpeg` on PATH is used
+# first (brew install ffmpeg); this package downloads a static binary as the fallback.
+imageio-ffmpeg>=0.5
